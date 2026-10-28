@@ -1,0 +1,24 @@
+name: CI & Integrity Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validar Manifesto e Estrutura
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar sintaxe do manifest.json
+        run: |
+          node -e '
+            const fs = require("fs");
+            const m = JSON.parse(fs.readFileSync("manifest.json"));
+            if (!m.toolchains) throw new Error("Campo toolchains ausente");
+            console.log("Manifesto válido com toolchains:", Object.keys(m.toolchains).join(", "));
+          '

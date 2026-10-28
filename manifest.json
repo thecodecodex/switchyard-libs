@@ -1,0 +1,131 @@
+{
+  "name": "switchyard-libs",
+  "version": "1.0.0",
+  "description": "Repositório central de toolchains e bibliotecas padronizadas para o ecossistema Switchyard",
+  "toolchains": {
+    "jdk-17": {
+      "versao": "17.0.20.1+1",
+      "distribuicao": "Eclipse Temurin",
+      "categoria": "java",
+      "plataformas": {
+        "darwin-arm64": {
+          "arquivo": "java/jdk-17/darwin-arm64.tar.gz",
+          "sha256": "196d13ba5f10414bef7f6a05a9b3f00edacb18ebacef2b99485db9e2ee18f0e8",
+          "formato": "tar.gz",
+          "urlOrigem": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.20.1_1.tar.gz"
+        },
+        "darwin-amd64": {
+          "arquivo": "java/jdk-17/darwin-amd64.tar.gz",
+          "sha256": "c01975da12ed4235250ff891fe8bba73a9e73037d444b269c9d0922b5dbc8e0a",
+          "formato": "tar.gz",
+          "urlOrigem": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_mac_hotspot_17.0.20.1_1.tar.gz"
+        },
+        "windows-amd64": {
+          "arquivo": "java/jdk-17/windows-amd64.zip",
+          "sha256": "e53a79c3c3d86865bd7e787903884331068e71321714ffd44f145785affc7cb0",
+          "formato": "zip",
+          "urlOrigem": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip"
+        },
+        "linux-amd64": {
+          "arquivo": "java/jdk-17/linux-amd64.tar.gz",
+          "sha256": "3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e",
+          "formato": "tar.gz",
+          "urlOrigem": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz"
+        }
+      }
+    },
+    "jdk-25": {
+      "versao": "25.0.4.1+1",
+      "distribuicao": "Eclipse Temurin",
+      "categoria": "java",
+      "plataformas": {
+        "darwin-arm64": {
+          "arquivo": "java/jdk-25/darwin-arm64.tar.gz",
+          "sha256": "61979887f7506a24a57439ff99adb8b3a7fc89977d9cfe3b8984f58a981b7b9d",
+          "formato": "tar.gz",
+          "urlOrigem": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.4.1_1.tar.gz"
+        },
+        "darwin-amd64": {
+          "arquivo": "java/jdk-25/darwin-amd64.tar.gz",
+          "sha256": "e6229d9504f7922053ab31821b9e6bee8761daf7b026a3476d1a027563009880",
+          "formato": "tar.gz",
+          "urlOrigem": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_mac_hotspot_25.0.4.1_1.tar.gz"
+        },
+        "windows-amd64": {
+          "arquivo": "java/jdk-25/windows-amd64.zip",
+          "sha256": "00c847d804f4a78e9f04f2683faf14fed898535b177b7fc704486cb0284e9283",
+          "formato": "zip",
+          "urlOrigem": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_windows_hotspot_25.0.4.1_1.zip"
+        },
+        "linux-amd64": {
+          "arquivo": "java/jdk-25/linux-amd64.tar.gz",
+          "sha256": "dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e",
+          "formato": "tar.gz",
+          "urlOrigem": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz"
+        }
+      }
+    },
+    "node-22": {
+      "versao": "22.23.3",
+      "distribuicao": "Node.js",
+      "categoria": "node",
+      "plataformas": {
+        "darwin-arm64": {
+          "arquivo": "node/node-22/darwin-arm64.tar.gz",
+          "sha256": "23b25245dcfb9af7262f8ff142e9e2e0af025368117329e7a7458a51e5922f53",
+          "formato": "tar.gz",
+          "urlOrigem": "https://nodejs.org/dist/v22.23.3/node-v22.23.3-darwin-arm64.tar.gz"
+        },
+        "darwin-amd64": {
+          "arquivo": "node/node-22/darwin-amd64.tar.gz",
+          "sha256": "8a677b0219178efd6eb0e475457c4afb452b521a92f6e67845a73bd85727f2a8",
+          "formato": "tar.gz",
+          "urlOrigem": "https://nodejs.org/dist/v22.23.3/node-v22.23.3-darwin-x64.tar.gz"
+        },
+        "windows-amd64": {
+          "arquivo": "node/node-22/windows-amd64.zip",
+          "sha256": "2b0ff57b049cda1bbcea2240eec20467018713c1efe1f7360c2681859b90ed71",
+          "formato": "zip",
+          "urlOrigem": "https://nodejs.org/dist/v22.23.3/node-v22.23.3-win-x64.zip"
+        },
+        "linux-amd64": {
+          "arquivo": "node/node-22/linux-amd64.tar.gz",
+          "sha256": "1084aa36196bba4c3a5e69a1ee388a6e4ff729dad09445fbcd434b28fe3c24af",
+          "formato": "tar.gz",
+          "urlOrigem": "https://nodejs.org/dist/v22.23.3/node-v22.23.3-linux-x64.tar.gz"
+        }
+      }
+    },
+    "go": {
+      "versao": "1.27.1",
+      "distribuicao": "Go",
+      "categoria": "go",
+      "plataformas": {
+        "darwin-arm64": {
+          "arquivo": "go/go-1.27/darwin-arm64.tar.gz",
+          "sha256": "ee215d57e0ec269c60cc9ceca68e6bda321ba9ee5afe24f4b0988703c2d87d12",
+          "formato": "tar.gz",
+          "urlOrigem": "https://go.dev/dl/go1.27.1.darwin-arm64.tar.gz"
+        },
+        "darwin-amd64": {
+          "arquivo": "go/go-1.27/darwin-amd64.tar.gz",
+          "sha256": "8f8f52c6649542cf027bbc9b9c68d1ec042f9f34808a40413f0b8b3f66f3caa4",
+          "formato": "tar.gz",
+          "urlOrigem": "https://go.dev/dl/go1.27.1.darwin-amd64.tar.gz"
+        },
+        "windows-amd64": {
+          "arquivo": "go/go-1.27/windows-amd64.zip",
+          "sha256": "a3911b5e0e1b1053f25ed0675f4c1c6aad1e2bfcf253df2b9be4caabd2edd95d",
+          "formato": "zip",
+          "urlOrigem": "https://go.dev/dl/go1.27.1.windows-amd64.zip"
+        },
+        "linux-amd64": {
+          "arquivo": "go/go-1.27/linux-amd64.tar.gz",
+          "sha256": "63d339f0da5ab53635a56f2490a7984dfe12dfcff22ad749f63edaf590168445",
+          "formato": "tar.gz",
+          "urlOrigem": "https://go.dev/dl/go1.27.1.linux-amd64.tar.gz"
+        }
+      }
+    }
+  }
+}
